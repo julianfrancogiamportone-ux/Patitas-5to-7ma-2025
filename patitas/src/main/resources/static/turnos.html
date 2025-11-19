@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Turnos - Veterinaria Patitas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container wrap">
+      <div class="brand">
+        <img src="/img/logo.png" class="logo">
+        <div><h1>Turnos</h1><p class="muted">Reservá tu consulta</p></div>
+      </div>
+
+      <nav class="topnav">
+        <a href="/index.html">Inicio</a>
+        <a href="/productos.html">Productos</a>
+        <a href="/servicios.html">Servicios</a>
+        <a href="/turnos.html" class="active">Turnos</a>
+        <a href="/carrito.html" class="go-cart">Carrito (<span id="cartCount">0</span>)</a>
+        <a href="/faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Reservar turno</h2>
+
+    <div class="grid" style="grid-template-columns:1fr 360px;gap:18px">
+      <div>
+        <form id="turnoForm" class="card">
+          <label>Nombre del dueño</label>
+          <input id="owner" placeholder="Nombre y apellido" required>
+          <label>Nombre de la mascota</label>
+          <input id="pet" placeholder="Nombre de la mascota" required>
+          <label>Servicio</label>
+          <select id="turnService">
+            <option>Consulta general</option>
+            <option>Vacunación</option>
+            <option>Estética</option>
+            <option>Esterilización</option>
+          </select>
+          <label>Fecha y hora</label>
+          <input id="turnDate" type="datetime-local" required>
+          <label>Teléfono / Email</label>
+          <input id="contact" placeholder="Teléfono o email">
+          <button class="btn" type="submit">Solicitar turno</button>
+          <div id="turnMsg" class="muted"></div>
+        </form>
+
+        <section class="mt card">
+          <h3>Turnos próximos</h3>
+          <div id="turnList"></div>
+        </section>
+      </div>
+
+      <aside class="card">
+        <h4 class="muted">Preparación para la visita</h4>
+        <ul class="muted">
+          <li>Traer cartilla de vacunación si la tiene.</li>
+          <li>Evitar dar comida 4 horas antes en cirugías.</li>
+          <li>Llegar 10 minutos antes para registro.</li>
+        </ul>
+        <h4 class="mt">Consulta rápida</h4>
+        <p class="muted">Si necesitás urgencia llamá al <strong>(011) 1234-5678</strong></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid"><div><strong>Veterinaria Patitas</strong></div><div><small class="muted">© 2025</small></div></div>
+  </footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

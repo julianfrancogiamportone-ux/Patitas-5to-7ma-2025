@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Productos - Veterinaria Patitas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container wrap">
+      <div class="brand">
+        <img src="/img/logo.png" class="logo">
+        <div><h1>Productos</h1><p class="muted">Catálogo y farmacia online</p></div>
+      </div>
+
+      <nav class="topnav">
+        <a href="/index.html">Inicio</a>
+        <a href="/productos.html" class="active">Productos</a>
+        <a href="/servicios.html">Servicios</a>
+        <a href="/turnos.html">Turnos</a>
+        <a href="/carrito.html" class="go-cart">Carrito (<span id="cartCount">0</span>)</a>
+        <a href="/faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Catálogo</h2>
+    <div style="display:flex;gap:8px;align-items:center;margin-top:8px">
+      <input id="search" placeholder="Buscar producto, principio activo..." />
+      <button id="btnSearch" class="btn">Buscar</button>
+      <button onclick="renderProducts()" class="btn secondary">Limpiar</button>
+    </div>
+
+    <div id="productList" class="grid mt"></div>
+
+    <section class="mt card">
+      <h3>Promociones</h3>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div class="card" style="flex:1;min-width:220px">
+          <h4>Combo Vacunación + Consulta</h4>
+          <p class="muted">Descuento especial al contratar ambos servicios.</p>
+          <div style="margin-top:8px"><button class="btn">Ver oferta</button></div>
+        </div>
+        <div class="card" style="flex:1;min-width:220px">
+          <h4>10% en accesorios</h4>
+          <p class="muted">Sólo online, válido hasta fin de mes.</p>
+          <div style="margin-top:8px"><button class="btn">Aprovechar</button></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div><strong>Veterinaria Patitas</strong></div>
+      <div><small class="muted">© 2025</small></div>
+    </div>
+  </footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>

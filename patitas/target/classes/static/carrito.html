@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Carrito - Veterinaria Patitas</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container wrap">
+      <div class="brand"><img src="/img/logo.png" class="logo"><div><h1>Carrito</h1><p class="muted">Tus productos seleccionados</p></div></div>
+      <nav class="topnav">
+        <a href="/index.html">Inicio</a><a href="/productos.html">Productos</a><a href="/servicios.html">Servicios</a><a href="/turnos.html">Turnos</a>
+        <a href="/carrito.html" class="active">Carrito</a><a href="/faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Carrito de compras</h2>
+    <div id="cartView" class="card"></div>
+
+    <div style="display:flex;gap:12px;margin-top:12px">
+      <button id="checkoutBtn" class="btn">Finalizar compra</button>
+      <button id="clearCart" class="btn" style="background:#f0505a">Vaciar carrito</button>
+    </div>
+
+    <section class="mt card">
+      <h3>Métodos de pago</h3>
+      <p class="muted">Aceptamos tarjetas, transferencias y pagos en efectivo en sucursal.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-grid"><div><strong>Veterinaria Patitas</strong></div><div><small class="muted">© 2025</small></div></div>
+  </footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
