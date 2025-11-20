@@ -8,7 +8,7 @@
 
 /* Datos de ejemplo (reemplazá por fetch a tus endpoints cuando quieras) */
 const sampleProducts = [
-  {id:1, title:'Alimento Balanceado Adulto 3kg', price:13900, img:'/img/logo.png', desc:'Balanceado premium para perros adultos.'},
+  {id:1, title:'Alimento Balanceado Adulto 3kg', price:13900, img:'/img/perroali.jpg', desc:'Balanceado premium para perros adultos.'},
   {id:2, title:'Shampoo Dermatológico 250ml', price:2500, img:'/img/logo.png', desc:'Suave, para piel sensible.'},
   {id:3, title:'Antipulgas Spot-on', price:4200, img:'/img/logo.png', desc:'Protección mensual.'},
   {id:4, title:'Collar de entrenamiento', price:3200, img:'/img/logo.png', desc:'Resistente y ajustable.'}
